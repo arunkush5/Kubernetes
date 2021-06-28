@@ -1,0 +1,23 @@
+# Mark node as unschedulable
+kubectl cordon <node>
+
+# Drain a node for maintenance
+kubectl drain <node>
+
+# Mark node as schedulable
+kubectl uncordon <node>
+
+# Show ‘top’ metrics for a node
+kubectl top node <node>
+
+# Display addresses of the master and services
+kubectl cluster-info
+
+# Dump current cluster state to stdout
+kubectl cluster-info dump
+
+# Show a list of eligible kube resource (i.e. pods, service, pv, etc)
+kubectl api-resources
+
+# Show a list of eligible kube resources in your namespace
+kubectl api-resources --namespaced=true
