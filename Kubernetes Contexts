@@ -1,0 +1,11 @@
+# Show contexts
+kubectl config get-contexts
+
+# Show current context
+kubectl config current-context
+
+# Switch context to another cluster
+kubectl config use-context <my-cluster-name>
+
+# Change Namespace
+kubectl config set-context --current --namespace=<namespace>
