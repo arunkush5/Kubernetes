@@ -1,0 +1,20 @@
+# Get all deployments in the current namespace
+kubectl get deployment
+
+# Get deployments in all namespaces
+kubectl get deployment --all-namespaces
+
+# Get deployments with more details 
+kubectl get deployment -o wide
+
+# Get the yaml for a deployment
+kubectl get deployment <deployment> -o yaml
+
+# Inspect a deployment
+kubectl describe deployment <deployment>
+
+# Get deployment's labels
+kubectl get deployment --show-labels
+
+# Get deployments that match a label
+kubectl get deployment -l <label>=<value>
