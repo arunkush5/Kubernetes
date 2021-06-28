@@ -1,5 +1,4 @@
-# Kubernetes
-kubctl Pack
+# Kubernetes Pods
 
 # Get all pods in the current namespace
 kubectl get pods
