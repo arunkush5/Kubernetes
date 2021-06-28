@@ -1,0 +1,26 @@
+# Roll a new version of a deployment
+kubectl set image deployment/<deployment> <container-name>=image:<version>
+
+# Check the deployment history
+kubectl rollout history deployment/<deployment>
+
+# Rollback a deployment
+kubectl rollout undo deployment/<deployment>
+
+# Rollback to a specific version
+kubectl rollout undo deployment/<deployment> --to-revision=2
+
+# Watch a rolling update
+kubectl rollout status -w deployment/<deployment>
+
+# Restart the rolling deploy
+kubectl rollout restart deployment/<deployment>
+
+# Edit a resource’s yaml
+kubectl edit deployment/<deployment>
+
+# Scale a deployment to 3 pods
+kubectl scale --replicas=3 deployment/<deployment>
+
+# Delete a pod
+kubectl delete pod <pod> 
