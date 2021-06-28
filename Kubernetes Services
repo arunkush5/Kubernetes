@@ -1,0 +1,20 @@
+# Get all services in the current namespace
+kubectl get services
+
+# Get services in all namespaces
+kubectl get service --all-namespaces
+
+# Get services with more details 
+kubectl get service -o wide
+
+# Get the yaml for a services
+kubectl get service <service> -o yaml
+
+# Inspect a service
+kubectl describe service <service>
+
+# Get service's labels
+kubectl get service --show-labels
+
+# Get services that match a label
+kubectl get service -l <label>=<value>
