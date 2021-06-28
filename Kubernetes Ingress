@@ -1,0 +1,20 @@
+# Get all ingress in the current namespace
+kubectl get ingress
+
+# Get ingress in all namespaces
+kubectl get ingress --all-namespaces
+
+# Get ingress with more details 
+kubectl get ingress -o wide
+
+# Get the yaml for a ingress
+kubectl get ingress <ingress> -o yaml
+
+# Inspect a ingress
+kubectl describe ingress <ingress>
+
+# Get ingress labels
+kubectl get ingress --show-labels
+
+# Get ingress that match a label
+kubectl get ingress -l <label>=<value>
