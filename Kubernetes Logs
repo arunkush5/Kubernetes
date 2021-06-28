@@ -1,0 +1,20 @@
+# Show logs (stdout) of a pod
+kubectl logs <pod>
+
+# Show logs (stdout) of pods that match a label
+kubectl logs -l <label>=<value>
+
+# Show logs of a previous instantiation of a container
+kubectl logs <pod> --previous
+
+# Show logs for a specific container in a pod (i.e. init container)
+kubectl logs <pod> -c <container>
+
+# Following logs from a pod
+kubectl logs -f <pod>
+
+# Follow all logs from a pod that match a label
+kubectl logs -f -l <label>=<value> --all-containers
+
+# Show logs with verbosity level of logs from 0 - 9
+kubectl logs <pod> --v=<0:9>
