@@ -1,0 +1,14 @@
+# Create a kubernetes resource from a file
+kubectl apply -f ./<manifest>.yaml
+
+# Create kubernetes resources from multiple files
+kubectl apply -f ./<manifest>.yaml -f ./<manifest>.yaml
+
+# Create resources from all manifest files in a directory
+kubectl apply -f ./<directory>
+
+# Create resource from a url
+kubectl apply -f <url_to_manifest>
+
+# Start a single instance of an image
+kubectl create deployment <deployment_name> --image=<image>
